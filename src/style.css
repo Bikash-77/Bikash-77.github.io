@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* body.dark {
+	background-image: url('../imgs/dark_bg.jpg');
+}
+body.light {
+	background-image: url('../imgs/light_bg.jpg');
+}*/
+
+#check {
+    display: none;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #161616;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+
+.dark .container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.dark .card {
+    position: relative;
+    width: 400px;
+    background-color: #000;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px 1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.dark .card:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 270px;
+    top: 0;
+    left: 0;
+    background-color: #ed1b2e;
+    clip-path: circle(400px at 50% -48.5%);
+}
+
+.dark .header {
+    position: relative;
+    height: 265px;
+}
+
+.dark .mail {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 1.5rem;
+    color: #1b262c;
+    opacity: .8;
+    transition: .3s;
+    z-index: 3;
+    text-decoration: none;
+}
+
+.dark .mail:hover {
+    opacity: 1;
+}
+
+.dark .hamburger-menu {
+    position: absolute;
+    width: 21px;
+    height: 16px;
+    top: 1.4rem;
+    left: 1.9rem;
+    z-index: 3;
+    cursor: pointer;
+    transition: .3s;
+    opacity: .8;
+}
+
+.dark .hamburger-menu:hover {
+    opacity: 1;
+}
+
+.dark .hamburger-menu .center {
+    position: absolute;
+    height: 2px;
+    width: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #000;
+    border-radius: 1px;
+}
+
+.dark .hamburger-menu:before,
+.dark .hamburger-menu:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 1px;
+    background-color: #000;
+}
+
+.dark .hamburger-menu:before {
+    top: 0;
+}
+
+.dark .hamburger-menu:after {
+    bottom: 0;
+}
+
